@@ -7,6 +7,10 @@ uploads the packet to this backend. The backend decrypts it,
 deduplicates it, and settles it exactly once, into the same
 accounts, transactions, and ledger used by the online flow.
 
+
+<img width="1400" height="600" alt="explanation-simple" src="https://github.com/user-attachments/assets/b3627272-1903-4866-8430-53271101575a" />
+
+
 This is mesh-routed deferred settlement, not real-time offline
 payment. Until the backend settles a packet, it is a payment
 instruction in transit, not money moved. The receiver only knows
