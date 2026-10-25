@@ -1,0 +1,14 @@
+Java Offline Pay with Bluetooth Mesh, working backend plus real Bluetooth node.
+
+Start with: offline/MESH_README.md
+Then run:  offline/mesh-schema.sql   (one new table, no existing table changed)
+Then run:  cd offline && ./mvnw spring-boot:run
+
+There is no simulated mesh in this version. The backend has only
+the real bridge endpoint and the server public key endpoint.
+The phone side is a real Bluetooth Low Energy node in
+offline/src/main/java/com/pay/offline/mesh/bluetooth, with the
+Android radio implementation in offline/android-mesh.
+The README lists the exact Android steps, the test results, and
+the honest limitations, including that over the air Bluetooth
+still needs two real Android phones.
